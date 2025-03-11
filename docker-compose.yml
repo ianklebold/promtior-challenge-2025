@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - src/.env
+    networks:
+      - rag-app-net
+
+networks:
+  rag-app-net:
+    driver: bridge
