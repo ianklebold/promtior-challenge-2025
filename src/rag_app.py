@@ -4,6 +4,6 @@ from generation_module_service import execute_generation_step
 
 
 def execute_rag_app(question):
-    documents_stored = execute_retrieval_step("llama3", "promptior_presentation.pdf", "https://www.promtior.ai/service")
-    chain = execute_argumentation_step("llama3",documents_stored)
+    documents_stored = execute_retrieval_step("promptior_presentation.pdf", "https://www.promtior.ai/service")
+    chain = execute_argumentation_step(documents_stored)
     return execute_generation_step(chain, question)

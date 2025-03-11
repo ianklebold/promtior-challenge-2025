@@ -1,18 +1,19 @@
 import os
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain_ollama import OllamaLLM
 
 def set_api_key():
     load_dotenv(".env")
     apikey_model = os.getenv("OPENAI_API_KEY")
-    print(apikey_model)
+    return apikey_model
 
-#"llama3"
-def initialize_model(model_name):
-    return OllamaLLM(model=model_name)
+#"openai"
+def initialize_model():
+    apikey_model = set_api_key()
+    return ChatOpenAI(api_key=apikey_model)
 
 
 def get_prompt_template():
@@ -26,5 +27,5 @@ def chain(model, storage):
     chain = create_retrieval_chain(storage.as_retriever(), stuff_document_chain)
     return chain
 
-def execute_argumentation_step(model_name, storage):
-    return chain( initialize_model(model_name), storage )
+def execute_argumentation_step(storage):
+    return chain( initialize_model(), storage )
