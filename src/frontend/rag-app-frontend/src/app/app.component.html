@@ -1,0 +1,47 @@
+<!-- src/app/app.component.html -->
+<div class="container">
+  <h1>RAG App Frontend - Promtior Challenge</h1>
+
+  <div class="form-group">
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="queryText"
+      [disabled]="loading"
+      placeholder="Selecciona una consulta"
+      readonly
+    />
+  </div>
+
+  <div class="btn-group">
+    <button class="btn btn-secondary" (click)="setPredefinedQuery('What services does Promtior offer?')" [disabled]="loading">
+      Consulta 1
+    </button>
+    <button class="btn btn-secondary" (click)="setPredefinedQuery('When was the company founded?')" [disabled]="loading">
+      Consulta 2
+    </button>
+  </div>
+
+  <div>
+    <button class="btn btn-primary" (click)="executeQuery()" [disabled]="loading || !queryText">
+      Ejecutar
+    </button>
+  </div>
+
+  <!-- Indicador de carga -->
+  <div *ngIf="loading" class="loading">
+    <p>Procesando... <span class="spinner"></span></p>
+  </div>
+
+  <!-- Muestra la respuesta -->
+  <div *ngIf="response" class="response">
+    <h3>Respuesta:</h3>
+    <p>{{ response }}</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    Creado por : Ian Fernandez 2025
+  </footer>
+
+</div>
