@@ -11,6 +11,14 @@ services:
       - src/.env
     networks:
       - rag-app-net
+  frontend:
+    build:
+      context: ./src/frontend/rag-app-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "4200:5000"
+    networks:
+      - rag-app-net
 
 networks:
   rag-app-net:
