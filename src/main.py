@@ -10,6 +10,7 @@ from pydantic import BaseModel
 app = FastAPI()
 
 origins = [
+    "https://my-challenge-app-promtior.azurewebsites.net",
     "http://localhost:4200",
     "http://127.0.0.1:4200",
     "http://frontend:4200"
