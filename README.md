@@ -9,7 +9,7 @@ los links del proyecto desplegado.
 
 ### Pre-Requisitos :technologist:
 
-Aqui presentamos que cosas necesitas para correr la api. 
+Aqui presentamos que cosas necesitas para correr las apps. 
 ```
 - Docker
 - Docker-compose
