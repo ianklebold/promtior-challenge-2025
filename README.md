@@ -70,6 +70,14 @@ FRONTEND : [Frontend](https://my-challenge-app-promtior.azurewebsites.net/)
 
 - Fernández Ian - *Desarrollador Backend, Frontend, Documentación* - :alien:[ianklebold](https://www.linkedin.com/in/ian-fern%C3%A1ndez-a72598179/)
 
+## Conclusiones y dificultades
+Este challenge ha sido una experiencia increíblemente enriquecedora y desafiante. La mayor complicación se presentó al seleccionar el LLM adecuado para la solución. Inicialmente se consideró utilizar Llama, pero rápidamente se evidenciaron ciertas limitaciones y problemas en su desempeño y manejo del contexto, lo que dificultó su aplicación en un entorno de producción robusto.
+
+Frente a estos obstáculos, se optó por cambiar a un modelo de mayor confiabilidad y escalabilidad, integrándose en una arquitectura de Retrieval Augmented Generation (RAG APP). La solución final combina la capacidad generativa del LLM con una base de datos de vectores (Croma) para recuperar información relevante, lo que permite generar respuestas precisas y fundamentadas.
+
+Este enfoque híbrido no solo superó los inconvenientes iniciales, sino que también demostró la potencia de combinar técnicas de recuperación y generación para aplicaciones avanzadas en inteligencia artificial. Sin duda, el challenge me permitió explorar y aprender en profundidad sobre la integración de modelos de lenguaje y sistemas de recuperación, abriendo nuevas oportunidades para el desarrollo de soluciones innovadoras.
+
+
 ## Despedida
 
 Fue un gusto trabajar en este proyecto y compartir mis conocimientos. Con :heart: Por :alien:[ianklebold](https://www.linkedin.com/in/ian-fern%C3%A1ndez-a72598179/) 
