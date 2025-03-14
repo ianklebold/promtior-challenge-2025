@@ -1,6 +1,9 @@
 # PROMTIOR CHALLENGE
 Aqui presento el challenge de PROMTIOR
 
+### Atencion :technologist:
+En esta branch main tenes acceso a solo la aplicacion backend, la aplicacion frontend se encuentra en la branch rag_app_front. En la seccion docs tenes acceso a la documentacion detallada, diagramas y capturas.
+
 ## Iniciemos :boom:
 
 Las siguientes instrucciones te permitiran tener una copia del proyecto funcionando en tu maquina local. En la seccion de **despliegue** tendrás
@@ -15,9 +18,6 @@ Aqui presentamos que cosas necesitas para correr las apps.
 - Docker-compose
 - Docker-desktop (En caso de windows)
 ```
-
-### Atencion :technologist:
-En esta branch main tenes acceso a solo la aplicacion backend, la aplicacion frontend se encuentra en la branch rag_app_front.
 
 ## Diagrama y resumen :computer:
 ![diagram](https://github.com/user-attachments/assets/255aaa68-0735-40b2-baac-909b156169bb)
